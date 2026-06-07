@@ -1,0 +1,16 @@
+[project]
+name = "jks"
+version = "0.1.0"
+description = "Local voice agent controller with OLED expressions"
+requires-python = ">=3.9"
+dependencies = [
+  "requests>=2.32.0",
+  "sounddevice>=0.5.0",
+  "soundfile>=0.12.1"
+]
+
+[project.scripts]
+jks = "jks.__main__:main"
+
+[tool.uv]
+package = true
